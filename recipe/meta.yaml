@@ -54,7 +54,14 @@ requirements:
 
 test:
   imports:
-    - deutschland
+    - deutschland.bundesanzeiger
+    - deutschland.bundesnetzagentur
+    - deutschland.bundeswahlleiter
+    - deutschland.destatis
+    - deutschland.handelsregister
+    - deutschland.lebensmittelwarnung
+    - deutschland.presseportal
+    - deutschland.verena
   commands:
     - pip check
   requires:
