@@ -58,7 +58,6 @@ test:
     - deutschland.bundesnetzagentur
     - deutschland.bundeswahlleiter
     - deutschland.destatis
-    - deutschland.handelsregister
     - deutschland.lebensmittelwarnung
     - deutschland.presseportal
     - deutschland.verena
