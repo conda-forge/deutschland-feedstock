@@ -59,7 +59,6 @@ test:
     - deutschland.bundeswahlleiter
     - deutschland.destatis
     - deutschland.lebensmittelwarnung
-    - deutschland.presseportal
     - deutschland.verena
   commands:
     - pip check
