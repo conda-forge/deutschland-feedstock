@@ -57,7 +57,6 @@ test:
     - deutschland.bundesanzeiger
     - deutschland.bundesnetzagentur
     - deutschland.bundeswahlleiter
-    - deutschland.destatis
     - deutschland.lebensmittelwarnung
     - deutschland.verena
   commands:
