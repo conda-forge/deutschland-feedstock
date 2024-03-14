@@ -1,5 +1,5 @@
 {% set name = "deutschland" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deutschland-{{ version }}.tar.gz
-  sha256: 16085e17f001bef4343ae6fea373d2813b665dfd242e3105e61b92d3a8f30def
+  sha256: 81a1cb5ace07356c40b21bdad78013c326ef971f58cad00d5088abeab6526fff
 
 build:
   noarch: python
