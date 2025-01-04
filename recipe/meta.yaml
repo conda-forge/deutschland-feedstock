@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deutschland-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/deutschland-{{ version }}.tar.gz
   sha256: e9f0ee39787ff005fc1f1660c1b6512c8d089281b89ef1e4071e615e590eeccb
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.8,<4.0
+    - python >={{ python_min }},<4.0
     - requests >=2.26.0,<3.0.0
     - dateparser >=1.0.0,<2.0.0
     - beautifulsoup4 >=4.9.3,<5.0.0
@@ -79,6 +79,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/bundesAPI/deutschland
